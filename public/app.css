@@ -1,0 +1,14 @@
+
+
+.cool-border
+{
+    border-width: 10px !important; /*important overwrites everything previous*/
+    border-radius: 3rem !important;
+    border-color: #00000014 !important;
+    
+}
+.cool-border:hover {
+    border-color: gray   !important;
+    background-color: lightgray !important;
+    transform: scale(1.3);
+}

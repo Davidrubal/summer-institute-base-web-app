@@ -2,4 +2,18 @@
   <%= title %>
 </h1>
 
-Hello world!
+<div>
+
+    <ul class="list-group list-group-horizontal col-md-12 flex-wrap">
+    
+    <%- projects.each do |project| -%>
+     <li class="list-group-item m-3 btn btn-outline-dark cool-border">
+         <a href="<%= url("/projects/#{project}")%>">
+             <i class="fas fa-camera fa-5x"></i>
+             <p><%= project.gsub('_', ' ').capitalize %></p>
+         </a>
+     </li>
+    <%- end -%>
+    
+    </ul>
+</div>
